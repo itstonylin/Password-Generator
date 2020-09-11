@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+body,
+html {
+    padding: 0;
+    margin: 0;
+    background-color: blueviolet;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: 700;
+}
+h2 {
+    text-align: center;
+    font-size: 1.1em;
+}
+#generatorContainer {
+    border: 2px solid white;
+    width: 500px;
+    background-color: rgb(50, 64, 168);
+    padding: 0.5em;
+}
+#passwordContainer {
+    border-radius: 0.5em;
+    background-color: #3399ff;
+}
+.passwordFeaturesContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em 0;
+}
+#generatePasswordButton {
+    margin: 0 auto;
+    width: 80%;
+    display: block;
+    height: 60px;
+}
+#generatePasswordButton {
+    cursor: pointer;
+    background-color: rgb(50, 168, 52);
+    outline: none;
+    box-shadow: none;
+    color: rgb(50, 64, 168);
+    font-size: 1.2em;
+    font-weight: 700;
+}
