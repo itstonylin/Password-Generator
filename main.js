@@ -64,8 +64,29 @@ let generatePassword = () => {
     document.querySelector("h2").innerHTML = password;
 };
 
+// copies element to clipboard
+function copyToClipboard(elementId) {
+    // Create a "hidden" input
+    var tempInput = document.createElement("input");
+    // Assign it the value of the specified element
+    tempInput.setAttribute("value", document.getElementById(elementId).innerHTML);
+    // Append it to the body
+    document.body.appendChild(tempInput);
+    // Highlight its content
+    tempInput.select();
+    // Copy the highlighted text
+    document.execCommand("copy");
+    // Remove it from the body
+    document.body.removeChild(tempInput);
+}
+
 // calls generatePassword function when form is submitted
 form.addEventListener("submit", function (event) {
     event.preventDefault();
     generatePassword();
+});
+
+// when copy password button is clicked, it will copy the password
+document.getElementById("copyPassButton").addEventListener("click", function () {
+    copyToClipboard("generatedPassword");
 });

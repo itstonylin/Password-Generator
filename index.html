@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -6,36 +5,39 @@
         <title>Password Generator</title>
         <!-- custom css -->
         <link rel="stylesheet" href="style.css" />
-         <!-- favicon -->
-         <link rel="shortcut icon" type="image/png" href="favicon.png" />
+        <!-- favicon -->
+        <link rel="shortcut icon" type="image/png" href="favicon.png" />
     </head>
     <body>
-        <form id="generatorContainer">
-            <div id="passwordContainer">
-                <h2>Password Generator</h2>
-            </div>
-            <div class="passwordFeaturesContainer">
-                <label for="passLength">Password Length</label>
-                <input type="number" step="1" min="4" max="50" id="passLength" required />
-            </div>
-            <div class="passwordFeaturesContainer">
-                <label for="lowerCase">Contain Lowercase Letters</label>
-                <input type="checkbox" id="lowerCase" required />
-            </div>
-            <div class="passwordFeaturesContainer">
-                <label for="upperCase">Contain Uppercase Letters</label>
-                <input type="checkbox" id="upperCase" required />
-            </div>
-            <div class="passwordFeaturesContainer">
-                <label for="numbers">Contain Numbers</label>
-                <input type="checkbox" id="numbers" required />
-            </div>
-            <div class="passwordFeaturesContainer">
-                <label for="symbols">Contain Symbols</label>
-                <input type="checkbox" id="symbols" required />
-            </div>
-            <button type="submit" id="generatePasswordButton">Generate Password</button>
-        </form>
+        <div class="flex">
+            <form id="generatorContainer">
+                <div id="passwordContainer">
+                    <h2 id="generatedPassword">Password Generator</h2>
+                </div>
+                <button type="button" id="copyPassButton">Copy Password</button>
+                <div class="passwordFeaturesContainer">
+                    <label for="passLength">Password Length</label>
+                    <input type="number" step="1" min="4" max="100" id="passLength" required="" />
+                </div>
+                <div class="passwordFeaturesContainer">
+                    <label for="lowerCase">Contain Lowercase Letters</label>
+                    <input type="checkbox" id="lowerCase" required="" />
+                </div>
+                <div class="passwordFeaturesContainer">
+                    <label for="upperCase">Contain Uppercase Letters</label>
+                    <input type="checkbox" id="upperCase" required="" />
+                </div>
+                <div class="passwordFeaturesContainer">
+                    <label for="numbers">Contain Numbers</label>
+                    <input type="checkbox" id="numbers" required="" />
+                </div>
+                <div class="passwordFeaturesContainer">
+                    <label for="symbols">Contain Symbols</label>
+                    <input type="checkbox" id="symbols" required="" />
+                </div>
+                <button type="submit" id="generatePasswordButton">Generate Password</button>
+            </form>
+        </div>
         <script src="main.js"></script>
     </body>
 </html>

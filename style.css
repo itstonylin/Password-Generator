@@ -5,20 +5,35 @@ html {
     margin: 0;
     background-color: blueviolet;
     font-family: "Poppins", sans-serif;
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
     color: black;
     font-weight: 700;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 h2 {
     text-align: center;
     font-size: 1.1em;
 }
+#copyPassButton{
+    margin: 1em auto;
+    width: 40%;
+    display: block;
+    height: 30px;
+    cursor: pointer;
+    background-color: rgb(50, 168, 52);
+    outline: none;
+    box-shadow: none;
+    color: rgb(50, 64, 168);
+    font-size: 0.6em;
+    font-weight: 700;
+}
 #generatorContainer {
+    width: 90%;
     border: 2px solid white;
-    width: 500px;
     background-color: rgb(50, 64, 168);
     padding: 0.5em;
 }
@@ -37,8 +52,6 @@ h2 {
     width: 80%;
     display: block;
     height: 60px;
-}
-#generatePasswordButton {
     cursor: pointer;
     background-color: rgb(50, 168, 52);
     outline: none;
@@ -47,8 +60,8 @@ h2 {
     font-size: 1.2em;
     font-weight: 700;
 }
-@media only screen and (max-width: 550px){
+@media only screen and (min-width: 551px) {
     #generatorContainer {
-        width: 90%;
+        width: 500px;
     }
 }
