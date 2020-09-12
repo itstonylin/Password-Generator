@@ -41,6 +41,7 @@ document.querySelectorAll(".passwordFeaturesContainer > input").forEach((item) =
 // generate password function
 let generatePassword = () => {
     password = "";
+    userSelection = "";
     if (lowerCase.checked) {
         password += getLowerCase();
         userSelection += lowerCaseLetters;
